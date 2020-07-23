@@ -12,6 +12,7 @@
     <script src="/src/lib/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
     <script src="/src/lib/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
     <script src="/src/lib/ThreeJS/three.min.js"></script>
+    <script src="/src/lib/ThreeJS/OBJLoader.min.js"></script>
 
     <style>
       body{
