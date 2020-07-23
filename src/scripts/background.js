@@ -82,8 +82,8 @@ if(container == null){
 
   var animate = function () {
     requestAnimationFrame( animate );
-    camera.position.x =  ((cursorX/window.innerWidth )-0.5) *3;
-    camera.position.y =  ((cursorY/window.innerHeight)-0.5) *2 + 1.50;
+    camera.position.x =  ((cursorX/window.innerWidth )-0.5) *0.6;
+    camera.position.y =  ((cursorY/window.innerHeight)-0.5) *0.6 + 1.50;
 
     camera.rotation.z = window.scrollY / window.scrollMaxY * Math.PI *2 + 1;
 
