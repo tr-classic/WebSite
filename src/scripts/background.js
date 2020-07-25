@@ -1,4 +1,4 @@
-var cursorX = 0;
+﻿var cursorX = 0;
 var cursorY = 0;
 document.onmousemove = function(e){
     cursorX = e.pageX;
@@ -30,14 +30,11 @@ loader.load(
     tr = object ;
 
     tr.position.set(0,0,2) ;
-    tr.scale.x = 0.004 ;
-    tr.scale.y = 0.004 ;
-    tr.scale.z = 0.004 ;
-    tr.position.y = 0.7 ;
+    tr.rotation.y = Math.PI ;
     object.traverse( function ( child ) {
   		//This allow us to check if the children is an instance of the Mesh constructor
   		if(child instanceof THREE.Mesh){
-  			child.material.color = new THREE.Color(0Xf25922);
+  			//child.material.color = new THREE.Color(0x00000000);
 
   			//Sometimes there are some vertex normals missing in the .obj files, ThreeJs will compute them
   			child.geometry.computeVertexNormals();
